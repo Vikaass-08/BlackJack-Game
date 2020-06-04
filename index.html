@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>21 cards</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header section -->
+      <div class="header-section">
+        <h1 class="name">Black-<span>Jack</span></h1>
+        <h3><span id="comment">Let's Play</span></h3>
+      </div>
+
+      <!-- playing section -->
+      <div class="playing-section">
+        <div class="user">
+          <h2>You: <span id="your-total">0</span></h2>
+          <div id="your-card-display"></div>
+        </div>
+        <div class="bot">
+          <h2>Bot: <span id="bot-total">0</span></h2>
+          <div id="bot-card-display"></div>
+        </div>
+      </div>
+
+      <!-- control section -->
+      <div class="control-section">
+        <button class="btn btn-success" id="hit">Hit</button>
+        <button class="btn btn-primary" id="stand" disabled="true">
+          Stand
+        </button>
+        <button class="btn btn-danger" id="deal" disabled="true">Deal</button>
+      </div>
+
+      <!-- score section -->
+      <div class="score-section">
+        <table>
+          <tr>
+            <th>Win</th>
+            <th>Loss</th>
+            <th>Draw</th>
+          </tr>
+          <tr>
+            <td id="win">0</td>
+            <td id="loss">0</td>
+            <td id="draw">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="cards.js"></script>
+  </body>
+</html>
+
+<!-- git checkout vikas
+git pull -->
